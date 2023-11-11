@@ -33,7 +33,7 @@ const Navbar = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full h-20 shadow-lg fixed top-0 left-0 z-[100]">
+    <div className="w-full h-20 shadow-lg bg-white fixed top-0 left-0 z-[101]">
       <div className="h-full flex items-center justify-between max-w-[1240px] mx-auto px-2 md:px-6 lg:px-8">
         <h2 className="px-2 md:p-0 text-2xl cursor-pointer">DK.</h2>
         <ul className="hidden md:flex items-center uppercase">
@@ -58,14 +58,14 @@ const Navbar = () => {
           className={
             nav
               ? `md:hidden w-full h-screen top-0 left-0 bg-black/70 fixed duration-300`
-              : "w-full h-screen top-0 left-0 bg-black/0 fixed duration-300 z-[-1]"
+              : ""
           }
         >
           <div
             className={
               nav
-              ? `fixed top-0 left-0 w-[75%] sm:w-[450px] md:w-[450px] h-screen bg-[#ecf0f3] p-8 duration-500 ease-in`
-              : `fixed top-0 left-[-100%] w-[75%] sm:w-[450px] md:w-[450px] h-screen bg-[#ecf0f3] p-8 duration-500 ease-in`
+                ? `fixed top-0 left-0 w-[75%] sm:w-[450px] md:w-[450px] h-screen bg-[#ecf0f3] p-8 duration-300 ease-in`
+                : `fixed top-0 left-[-100%] w-[75%] sm:w-[450px] md:w-[450px] h-screen bg-[#ecf0f3] p-8 duration-300 ease-in`
             }
           >
             <div className="flex justify-between items-center">

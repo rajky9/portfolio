@@ -1,9 +1,18 @@
 import Image from 'next/image'
+import Main from './components/Main'
+import About from './components/About'
+import Skills from './components/Skills'
+import Navbar from './components/Navbar'
+import Projects from './components/Projects'
 
 export default function Home() {
   return (
-    <main className="">
-
+    <main>
+      <Navbar />
+      <Main />
+      <About />
+      <Skills />
+      <Projects />
     </main>
   )
 }
