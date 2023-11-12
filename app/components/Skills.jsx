@@ -18,7 +18,7 @@ import SkillsItem from "./SkillsItem";
 
 const Skills = () => {
   return (
-    <div className="w-full lg:h-screen">
+    <div id="skills" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto flex flex-col h-full justify-center p-2 overflow-hidden lg:my-0 my-10">
         <p className="text-indigo-500 text-xl uppercase tracking-widest">
           skills

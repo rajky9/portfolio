@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaGithub, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center z-10">
+    <div id="home" className="w-full h-screen text-center z-10">
       <div className="max-w-[1240px] mx-auto flex flex-col items-center justify-center h-full w-full">
         <h1 className="py-3 text-gray-700">
           Hi, I&#39;m <span className="text-indigo-600">Kristian</span>

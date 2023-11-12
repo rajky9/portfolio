@@ -1,46 +1,57 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaFacebook, FaEnvelope } from "react-icons/fa";
 const navItems = [
   {
     name: "Home",
-    link: "/",
+    link: "/#home",
   },
   {
     name: "About",
-    link: "/",
+    link: "/#about",
   },
   {
     name: "Skills",
-    link: "/",
+    link: "/#skills",
   },
   {
     name: "Projects",
-    link: "/",
+    link: "/#projects",
   },
   {
     name: "Contact",
-    link: "/",
+    link: "/#contact",
   },
 ];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState("");
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow("shadow-lg");
+      } else {
+        setShadow("");
+      }
+    };
+    window.addEventListener('scroll', handleShadow);
+  }, []);
   const handleNav = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full h-20 shadow-lg bg-white fixed top-0 left-0 z-[101]">
+    <div className={`w-full h-20 ${shadow} bg-white fixed top-0 left-0 z-[101] ease-in duration-300`}>
       <div className="h-full flex items-center justify-between max-w-[1240px] mx-auto px-2 md:px-6 lg:px-8">
         <h2 className="px-2 md:p-0 text-2xl cursor-pointer">DK.</h2>
         <ul className="hidden md:flex items-center uppercase">
           {navItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link href="/" className="p-4 hover:border-b">
+                <Link href={item.link} className="p-4 hover:border-b">
                   {item.name}
                 </Link>
               </li>
@@ -88,7 +99,7 @@ const Navbar = () => {
                   return (
                     <li key={index} className="text-sm">
                       <Link
-                        href="/"
+                        href={item.link}
                         className="py-2 w-full block hover:bg-gray-300"
                       >
                         {item.name}

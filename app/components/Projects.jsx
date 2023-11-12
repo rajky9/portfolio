@@ -6,7 +6,7 @@ import captur from "@/public/assets/projects/captur.jpg";
 
 const Projects = () => {
   return (
-    <div className="w-full h-auto">
+    <div id="projects" className="w-full h-auto scroll-m-20">
       <div className="max-w-[1240px] mx-auto py-8 px-2">
         <p className="text-indigo-500 text-xl uppercase tracking-widest">
           projects

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen flex items-center">
+    <div id="about" className="w-full md:h-screen flex items-center">
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-3 gap-8 p-2">
         <div className="col-span-2">
           <p className="text-indigo-500 text-xl uppercase tracking-widest">
