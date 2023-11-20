@@ -12,7 +12,7 @@ const ProjectItem = ({
   return (
     <div className="rounded-xl shadow-xl shadow-gray-400 hover:bg-gradient-to-r from-indigo-800 to-indigo-500 p-4 relative group ">
       <Image
-        className="rounded-lg group-hover:opacity-10 w-full h-full"
+        className="rounded-lg group-hover:opacity-10 w-full h-full object-cover"
         layout=""
         alt="/"
         src={imageUrl}

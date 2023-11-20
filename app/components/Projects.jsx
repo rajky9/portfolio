@@ -3,6 +3,8 @@ import ProjectItem from "./ProjectItem";
 import property from "@/public/assets/projects/property.jpg";
 import crypto from "@/public/assets/projects/crypto.jpg";
 import captur from "@/public/assets/projects/captur.jpg";
+import weather from "@/public/assets/projects/weather.jpg";
+
 
 const Projects = () => {
   return (
@@ -35,11 +37,11 @@ const Projects = () => {
             projectLink="https://captur-app.vercel.app/"
           />
           <ProjectItem
-            imageUrl={crypto}
-            projectName="Crypto"
+            imageUrl={weather}
+            projectName="Weather APP"
             technology="Next JS"
-            github="url"
-            projectLink="aa"
+            github="https://github.com/rajky9/weather-app"
+            projectLink="https://actualweatherapp.vercel.app/"
           />
         </div>
       </div>
