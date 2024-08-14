@@ -19,7 +19,7 @@ const ProjectItem = ({
       />
       <div className="hidden group-hover:block text-center absolute top-[50%] left-[50%]  translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-2xl text-white tracking-wide">{projectName}</h3>
-        <p className="p-2 font-bold text-white">{technology}</p>
+        <p className="p-2 font-bold text-black">{technology}</p>
 
         <Link target="_blank" href={github}>
           <p className="p-2 bg-gray-100 rounded-md font-bold text-sm border mt-1 w-[150px] mx-auto hover:bg-gray-300">

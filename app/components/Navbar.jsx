@@ -100,6 +100,7 @@ const Navbar = () => {
                     <li key={index} className="text-sm">
                       <Link
                         href={item.link}
+                        onClick={handleNav}
                         className="py-2 w-full block hover:bg-gray-300"
                       >
                         {item.name}

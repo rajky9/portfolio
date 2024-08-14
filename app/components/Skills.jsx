@@ -12,6 +12,7 @@ import java from "@/public/assets/skills/java.png";
 import php from "@/public/assets/skills/php.png";
 import node from "@/public/assets/skills/node.png";
 import github from "@/public/assets/skills/github1.png";
+import postgress from "@/public/assets/skills/postgress.png";
 
 import Image from "next/image";
 import SkillsItem from "./SkillsItem";
@@ -40,13 +41,13 @@ const Skills = () => {
             alt="html"
             text="Tailwind"
           />
-          <SkillsItem
+          {/* <SkillsItem
             src={node}
             width={64}
             height={64}
             alt="html"
             text="Node"
-          />
+          /> */}
           <SkillsItem
             src={react}
             width={64}
@@ -75,6 +76,13 @@ const Skills = () => {
             height={64}
             alt="html"
             text="Github"
+          />
+          <SkillsItem 
+            src={postgress}
+            width={64}
+            height={64}
+            alt="html"
+            text="PostgreSQL"
           />
         </div>
         <p className="text-indigo-500 uppercase tracking-widest my-6">
