@@ -12,18 +12,22 @@ const About = () => {
             ABOUT
           </p>
           <h2 className="py-4 text-3xl">Who I Am</h2>
-          <p className="p-2"> Lorem ipsum dolor sit amet.</p>
           <p className="text-gray-600 py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et,
-            voluptates nemo veniam possimus fugiat quibusdam doloribus corporis
-            ipsum eum, itaque, commodi veritatis perferendis illum aliquam nobis
-            vel facilis molestias!
+            Hello, My name is Kristian. I am a fresh graduate of a 2nd degree
+            college.
           </p>
           <p className="text-gray-600 py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-            quo voluptate quae deserunt distinctio enim? Cupiditate deleniti
-            possimus, modi, voluptatum quas inventore fugiat, architecto
-            dignissimos numquam explicabo placeat asperiores mollitia?
+            During my studies at school, I went through a lot of programming
+            languages ​​such as C#, Java, PHP. I chose the path of web
+            applications.
+          </p>
+          <p className="text-gray-600 py-2">
+            First I started with Html, CSS and PHP. Later, I learned the basics
+            of JS and started using ReactJS, NextJS frameworks.
+          </p>
+          <p className="text-gray-600 py-2">
+            We also learned database technologies at school. Specifically, it
+            was Oracle technology. However, I use PostgreSQL in my projects.
           </p>
           <p className="underline text-gray-600 cursor-pointer py-2">
             <Link href="/#projects">Check out some of my latest projects</Link>
