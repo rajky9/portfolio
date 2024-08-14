@@ -12,7 +12,7 @@ const About = () => {
             ABOUT
           </p>
           <h2 className="py-4 text-3xl">Who I Am</h2>
-          <p className="p-2">// Lorem ipsum dolor sit amet.</p>
+          <p className="p-2"> Lorem ipsum dolor sit amet.</p>
           <p className="text-gray-600 py-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis et,
             voluptates nemo veniam possimus fugiat quibusdam doloribus corporis
