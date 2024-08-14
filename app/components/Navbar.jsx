@@ -91,7 +91,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-400 my-4">
-              <p className="py-4">Let's build something legendary together</p>
+              <p className="py-4">Let&apos;s build something legendary together</p>
             </div>
             <div>
               <ul className="uppercase">
@@ -110,7 +110,7 @@ const Navbar = () => {
                 })}
               </ul>
               <div className="mt-20">
-                <p className="uppercase text-indigo-600">Let's connect</p>
+                <p className="uppercase text-indigo-600">Let&apos;s connect</p>
                 <div className="flex justify-between w-[100%] sm:w-[80%] py-6 duration-200">
                   <div className="p-3 shadow-lg shadow-gray-400 cursor-pointer hover:scale-105 rounded-full duration-200">
                     <FaLinkedinIn size={25} />
