@@ -52,6 +52,15 @@ const Contact = () => {
 
     try {
       await sendEmail(contact)
+      alert("Message has been sent!")  
+      setContact({
+        name: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+
     } catch (error) {
       alert("Something went wrong!")  
     } finally{
@@ -213,7 +222,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full mt-6 font-medium text-gray-100 uppercase bg-gradient-to-r from-indigo-600 to-indigo-400 p-4 rounded-lg"
+                  className="w-full mt-6 font-medium text-gray-100 uppercase bg-gradient-to-r from-indigo-600 to-indigo-400 p-4 rounded-lg disabled:cursor-not-allowed disabled:from-indigo-600/50 disabled:to-indigo-400/50"
                 >
                   Send Message
                 </button>
