@@ -6,6 +6,7 @@ import weather from "@/public/assets/projects/weather.jpg";
 import balance from "@/public/assets/projects/account_balance.jpg"
 import attendance from "@/public/assets/projects/attendance.jpg"
 import foods from "@/public/assets/projects/foods.jpg"
+import vikom from "@/public/assets/projects/vikom.jpg"
 
 
 const Projects = () => {
@@ -58,6 +59,13 @@ const Projects = () => {
             technology="ReactJS"
             github="https://github.com/rajky9/food-app"
             projectLink="https://food-app-ten-phi.vercel.app/"
+          />
+          <ProjectItem 
+            imageUrl={vikom}
+            projectName="Eye clinic"
+            technology="Wordpress"
+            github=""
+            projectLink="https://vikom.sk/"
           />
         </div>
       </div>
